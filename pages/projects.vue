@@ -13,9 +13,9 @@
 
 <script setup>
 const description =
-  "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.";
+  "There are some of my projects that I'm proud of. That's not much, but everyone has to start somewhere.";
 useSeoMeta({
-  title: "Projects | Fayaz Ahmed",
+  title: "Projects | Jacob Dajczak",
   description,
 });
 

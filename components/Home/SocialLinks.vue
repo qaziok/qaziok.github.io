@@ -26,23 +26,23 @@
 const links = [
   {
     name: "Twitter",
-    url: "https://twitter.com/fayazara",
+    url: "https://twitter.com/qaziok",
     icon: "mdi:twitter",
   },
   {
     name: "GitHub",
-    url: "https://github.com/fayazara",
+    url: "https://github.com/qaziok",
     icon: "mdi:github",
   },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/fayaz-aralikatti/",
+    url: "https://www.linkedin.com/in/qaziok/",
     icon: "mdi:linkedin",
   },
   {
-    name: "Telegram",
-    url: "https://t.me/fayazara",
-    icon: "mdi:telegram",
+    name: "Discord",
+    url: "https://discordapp.com/users/653297426043502623/",
+    icon: "mdi:discord",
   },
 ];
 </script>

@@ -11,9 +11,9 @@
 
 <script setup>
 const description =
-  "All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.";
+  "All of my articles. This section is important to me because I want to share what I’ve learned, what I’ve accomplished, and the struggles I’ve overcome. I hope you enjoy them.";
 useSeoMeta({
-  title: "Articles | Fayaz Ahmed",
+  title: "Articles | Jacob Dajczak",
   description,
 });
 
