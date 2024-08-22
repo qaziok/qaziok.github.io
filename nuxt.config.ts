@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@nuxthq/studio",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
+    "@nuxtjs/sitemap",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
@@ -35,5 +36,9 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
     },
+  },
+  site: {
+    url: "https://qaziok.github.io",
+    name: "Jacob Dajczak's personal blog",
   },
 });

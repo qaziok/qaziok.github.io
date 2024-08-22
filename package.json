@@ -2,8 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --preset github_pages",
     "dev": "nuxt dev -p 2137 --host",
+    "serve": "npx serve -l 2137 .output/public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,6 +15,7 @@
     "@nuxthq/studio": "1.0.6",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "3.1.1",
+    "@nuxtjs/sitemap": "^6.0.0-beta.4",
     "nuxt": "3.9.1",
     "nuxt-icon": "0.6.7",
     "prettier": "3.1.1",
