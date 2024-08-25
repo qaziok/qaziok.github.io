@@ -17,7 +17,7 @@ const route = useRoute();
 const { slug } = route.params;
 useSeoMeta({
   twitterCard: "summary_large_image",
-  articleAuthor: "Jacob Dajczak",
+  articleAuthor: "Jakub Dajczak",
 });
 </script>
 <style>

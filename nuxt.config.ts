@@ -39,6 +39,6 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://qaziok.github.io",
-    name: "Jacob Dajczak's personal blog",
+    name: "Jakub Dajczak's personal blog",
   },
 });

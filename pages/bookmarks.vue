@@ -30,7 +30,7 @@
 const description =
   "Awesome things I've found on the internet. Hope you'll find something useful here.";
 useSeoMeta({
-  title: "Bookmarks | Jacob Dajczak",
+  title: "Bookmarks | Jakub Dajczak",
   description,
 });
 
@@ -43,13 +43,13 @@ const bookmarks = [
   {
     id: 2,
     label: "Free developer sandbox for developers from Microsoft",
-    url: "https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started"
+    url: "https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started",
   },
   {
     id: 3,
     label: "Phind.com - Great AI search engine",
-    url: "https://www.phind.com"
-  }
+    url: "https://www.phind.com",
+  },
 ];
 
 function getHost(url) {

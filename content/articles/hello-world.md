@@ -9,7 +9,7 @@ slug: "hello-world"
 
 > General Kenobi
 
-In case you missed it, I'm Jacob Dajczak, a software developer from Gdańsk, Poland. And kind of a nerd, as you can see.
+In case you missed it, I'm Jakub Dajczak, a software developer from Gdańsk, Poland. And kind of a nerd, as you can see.
 I decided to build this website to share my thoughts and projects with others.
 
 So, this is one of my projects - my website.
@@ -51,5 +51,3 @@ I'm hoping to add new articles and describe my learnings in the future. I'm also
 my new projects, so stay tuned!
 
 See You Starside!
-
-
