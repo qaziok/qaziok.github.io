@@ -50,6 +50,11 @@ const bookmarks = [
     label: "Phind.com - Great AI search engine",
     url: "https://www.phind.com",
   },
+  {
+    id: 4,
+    label: "Coolors - The super fast color schemes generator!",
+    url: "https://coolors.co/",
+  },
 ];
 
 function getHost(url) {
