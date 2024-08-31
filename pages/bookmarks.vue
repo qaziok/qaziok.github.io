@@ -27,12 +27,21 @@
 </template>
 
 <script setup>
+const title = "Bookmarks | Jakub Dajczak";
 const description =
   "Awesome things I've found on the internet. Hope you'll find something useful here.";
+
 useSeoMeta({
-  title: "Bookmarks | Jakub Dajczak",
+  title,
   description,
+  ogTitle: title,
+  ogDescription: description,
 });
+
+defineOgImageComponent('Page',{
+  title: 'Bookmarks',
+  subTitle: 'Some interesting links I found on the internet',
+})
 
 const bookmarks = [
   {

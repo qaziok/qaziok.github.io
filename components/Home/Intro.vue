@@ -45,9 +45,19 @@
 </template>
 
 <script setup>
+const title = "Jakub Dajczak";
+const description = "I’m Jakub, fullstack developer from Poland. Working with Python, Ruby, GraphQL, and Apache Solr.";
+
+defineOgImageComponent('Page', {
+  title,
+  subTitle: 'Personal blog about programming and technology',
+  author: '',
+});
+
 useSeoMeta({
-  title: "Jakub Dajczak",
-  description:
-    "I’m Jakub, fullstack developer from Poland. Working with Python, Ruby, GraphQL, and Apache Solr.",
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
 });
 </script>

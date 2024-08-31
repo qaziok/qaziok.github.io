@@ -12,11 +12,20 @@
 </template>
 
 <script setup>
+const title = "Projects | Jakub Dajczak";
 const description =
   "There are some of my projects that I'm proud of. That's not much, but everyone has to start somewhere.";
+
 useSeoMeta({
-  title: "Projects | Jakub Dajczak",
+  title,
   description,
+  ogTitle: title,
+  ogDescription: description,
+});
+
+defineOgImageComponent('Page', {
+  title: 'Projects',
+  subTitle: 'Work that I\'ve done and that I\'m proud of',
 });
 
 const { data: projects } = await useAsyncData("projects-all", () =>
