@@ -53,11 +53,6 @@ const items = [
     path: "/articles",
     icon: "solar:document-add-outline",
   },
-  // {
-  //   name: "What's in my bag?",
-  //   path: "/whats-in-my-bag",
-  //   icon: "solar:backpack-outline", TODO: add this when I have some stuff
-  // },
   {
     name: "Bookmarks",
     path: "/bookmarks",

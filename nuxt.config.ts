@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     "@nuxt/ui",
     "nuxt-icon",
@@ -10,10 +11,13 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "@nuxtjs/sitemap",
+    "nuxt-og-image",
   ],
+
   ui: {
     icons: ["heroicons", "lucide"],
   },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -26,19 +30,24 @@ export default defineNuxtConfig({
       },
     },
   },
+
   content: {
     highlight: {
       theme: "github-dark",
     },
   },
+
   googleFonts: {
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
     },
   },
+
   site: {
     url: "https://qaziok.github.io",
     name: "Jakub Dajczak's personal blog",
   },
+
+  compatibilityDate: "2024-08-31",
 });
