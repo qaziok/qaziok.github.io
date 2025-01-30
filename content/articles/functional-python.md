@@ -143,6 +143,7 @@ Generators can be written using comprehensions as well:
 ```python
 gen = (chr(65+i) for i in range(5))
 ```
+
 Yet, it's important to remember that comprehensions and generators are not always the best choice. Sometimes explicit loops are more readable and maintainable.
 
 ### Recursion
@@ -210,6 +211,7 @@ for n in range(5):
 
 print([adder(10) for adder in adders])  # [10, 11, 12, 13, 14]
 ```
+
 This small change makes all lambdas close over different variables, and now they return expected results. However, there is another problem - now we can override the `n` argument. It's not a big deal, but it's something to be aware of.
 
 ```python
@@ -396,6 +398,7 @@ update = lambda balance, payment: round(balance * 1.05) - payment
 print(list(accumulate(repeat(90, 10), update, initial=1000)))
 # [1000, 960, 918, 874, 828, 779, 728, 674, 618, 559, 497]
 ```
+
 The `functools` module provides `partial`, which allows us to use currying, a common technique in functional languages. This is useful for creating new functions by fixing some arguments of existing ones. The module also includes `reduce`, which applies a function of two arguments cumulatively to the items of an iterable.
 
 Of course, there are many more useful functions in these modules, so it's worth exploring them to see how they can help you in your code. If I were to include all of them, this article would be too long and too boring - I hope it's not already.
