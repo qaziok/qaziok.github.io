@@ -33,7 +33,10 @@ export default defineNuxtConfig({
 
   content: {
     highlight: {
-      theme: "github-dark",
+      theme: {
+        default: "github-dark", // Light theme do not work great for now :(
+        dark: "github-dark",
+      },
     },
   },
 
@@ -49,5 +52,11 @@ export default defineNuxtConfig({
     name: "Jakub Dajczak's personal blog",
   },
 
-  compatibilityDate: "2024-08-31",
+  mdc: {
+    highlight: {
+      langs: ['python']
+    }
+  },
+
+  compatibilityDate: "2025-01-30",
 });
