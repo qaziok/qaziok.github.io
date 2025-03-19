@@ -1,0 +1,8 @@
+{
+    "name": "Send me an email",
+    "url": "mailto:jakub.dajczak@gmail.com",
+    "icon": "mdi:email",
+    "tags": [
+        "contact"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Save to contacts",
+    "filename": "jakub-dajczak-contact.vcf",
+    "icon": "mdi:card-account-details",
+    "tags": [
+        "contact"
+    ]
+}

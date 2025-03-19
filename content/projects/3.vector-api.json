@@ -1,0 +1,8 @@
+{
+    "name": "VectorSearch API",
+    "url": "https://github.com/qaziok/iis-api",
+    "description": "API for managing the search in multiple vector databases",
+    "thumbnail": "/projects/vsapi.png",
+    "status": "DONE",
+    "opensource": true
+}
