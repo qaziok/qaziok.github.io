@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">
+      FIND ME ON
+    </h2>
     <div class="space-y-5">
       <NuxtLink
-        v-for="link in links"
+        v-for="link in socialLinks"
         :key="link.icon"
         :to="link.url"
         target="_blank"
@@ -23,26 +25,10 @@
 </template>
 
 <script lang="ts" setup>
-const links = [
-  {
-    name: "Twitter",
-    url: "https://twitter.com/qaziok",
-    icon: "mdi:twitter",
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/qaziok",
-    icon: "mdi:github",
-  },
-  {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/qaziok/",
-    icon: "mdi:linkedin",
-  },
-  {
-    name: "Discord",
-    url: "https://discordapp.com/users/653297426043502623/",
-    icon: "mdi:discord",
-  },
-];
+const { data: links } = await useAsyncData("social-links", () =>
+  queryContent("/links")
+    .where({ tags: { $contains: "social" } })
+    .find()
+);
+const socialLinks = computed(() => links.value || []);
 </script>

@@ -1,8 +1,8 @@
 {
-    "name": "qaziok.github.io",
-    "url": "https://github.com/qaziok/qaziok.github.io",
-    "description": "This website created thanks to Fayaz Ahmed and his amazing Nuxt 3 template",
-    "thumbnail": "/favicon.ico",
-    "status": "Active",
-    "opensource": true
-  }
+  "name": "qaziok.github.io",
+  "url": "https://github.com/qaziok/qaziok.github.io",
+  "description": "This website created thanks to Fayaz Ahmed and his amazing Nuxt 3 template",
+  "thumbnail": "/favicon.ico",
+  "status": "Active",
+  "opensource": true
+}

@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader class="mb-12" title="Projects" :description="description" />
     <div class="space-y-4">
       <AppProjectCard
@@ -23,9 +23,9 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent('Page', {
-  title: 'Projects',
-  subTitle: 'Work that I\'ve done and that I\'m proud of',
+defineOgImageComponent("Page", {
+  title: "Projects",
+  subTitle: "Work that I've done and that I'm proud of",
 });
 
 const { data: projects } = await useAsyncData("projects-all", () =>

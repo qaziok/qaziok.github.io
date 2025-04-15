@@ -7,6 +7,7 @@
       sizes="48px sm:64px"
       placeholder
       format="webp"
+      @dblclick="navigateTo('/me')"
     />
     <h1
       class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100"
@@ -46,12 +47,13 @@
 
 <script setup>
 const title = "Jakub Dajczak";
-const description = "I’m Jakub, fullstack developer from Poland. Working with Python, Ruby, GraphQL, and Apache Solr.";
+const description =
+  "I’m Jakub, fullstack developer from Poland. Working with Python, Ruby, GraphQL, and Apache Solr.";
 
-defineOgImageComponent('Page', {
+defineOgImageComponent("Page", {
   title,
-  subTitle: 'Personal blog about programming and technology',
-  author: '',
+  subTitle: "Personal blog about programming and technology",
+  author: "",
 });
 
 useSeoMeta({

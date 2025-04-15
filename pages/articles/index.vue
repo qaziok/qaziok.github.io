@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader class="mb-16" title="Articles" :description="description" />
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
@@ -21,9 +21,9 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent('Page',{
-  title: 'Articles',
-  subTitle: 'Write-ups on coding and tech topics',
+defineOgImageComponent("Page", {
+  title: "Articles",
+  subTitle: "Write-ups on coding and tech topics",
 });
 
 const { data: articles } = await useAsyncData("all-articles", () =>

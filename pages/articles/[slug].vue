@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <div
       class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
     >
@@ -28,7 +28,7 @@ useSeoMeta({
 
 defineOgImageComponent("Article");
 </script>
-<style>
+<style lang="postcss">
 .prose h2 a,
 .prose h3 a {
   @apply no-underline;

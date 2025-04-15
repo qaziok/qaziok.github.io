@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader class="mb-8" title="Bookmarks" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
@@ -38,16 +38,16 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent('Page',{
-  title: 'Bookmarks',
-  subTitle: 'Some interesting links I found on the internet',
-})
+defineOgImageComponent("Page", {
+  title: "Bookmarks",
+  subTitle: "Some interesting links I found on the internet",
+});
 
 const bookmarks = [
   {
     id: 1,
-    label: "Realtime colors",
-    url: "https://www.realtimecolors.com/",
+    label: "Cobalt - save whatever you want, however you want",
+    url: "https://cobalt.tools/",
   },
   {
     id: 2,
@@ -63,6 +63,11 @@ const bookmarks = [
     id: 4,
     label: "Coolors - The super fast color schemes generator!",
     url: "https://coolors.co/",
+  },
+  {
+    id: 5,
+    label: "GPRM - GitHub Profile ReadMe Maker",
+    url: "https://gprm.itsvg.in/",
   },
 ];
 
