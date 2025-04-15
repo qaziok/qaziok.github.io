@@ -72,7 +72,7 @@ definePageMeta({
 
 const title = "Jakub Dajczak";
 const description =
-  "I'm Jakub, fullstack developer from Poland. Working with Python, Ruby, GraphQL, and Apache Solr.";
+  "Software developer from Gdańsk, Poland. Tech enthusiast and gamer.";
 
 defineOgImageComponent("Page", {
   title,

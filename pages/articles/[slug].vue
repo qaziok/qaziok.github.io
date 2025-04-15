@@ -8,6 +8,7 @@
           <article>
             <h1>{{ doc.title }}</h1>
             <ContentRenderer :value="doc" />
+            <AppComments />
           </article>
         </template>
         <template #not-found>

@@ -19,10 +19,10 @@ So, this is one of my projects - my website.
 I watched a NetworkChuck video about why I need a website,
 and I thought it was a great idea. So, I decided to build one.
 
-<center style="position: relative; padding-top: 56.25%; width: 100%; overflow: hidden;">
+<div style="text-align: center; position: relative; padding-top: 56.25%; width: 100%; overflow: hidden;">
  <iframe style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"
  width="100%" height="315" src="https://www.youtube.com/embed/EXfFBEuCAr0?si=yyarOI4SQWq_6Auf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
+</div>
 
 BTW I cannot recommend [NetworkChuck](https://www.youtube.com/@NetworkChuck)
 enough. He's a great guy. Go watch his videos!
