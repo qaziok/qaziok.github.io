@@ -82,6 +82,6 @@ function getHost(url) {
 
 function getThumbnail(url) {
   const host = getHost(url);
-  return `https://logo.clearbit.com/${host}`;
+  return `https://www.google.com/s2/favicons?sz=64&domain_url=${host}`;
 }
 </script>
