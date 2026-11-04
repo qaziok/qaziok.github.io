@@ -1,35 +1,35 @@
 <script setup lang="ts">
-const prop = withDefaults(
+withDefaults(
   defineProps<{
     title?: string;
+    subTitle?: string;
+    author?: string;
   }>(),
   {
     title: "title",
+    subTitle: "subTitle",
+    author: "Jakub Dajczak",
   }
 );
-
-const titleSplit = prop["title"].split("-");
-const mainTitle = titleSplit[0];
-const subTitle = titleSplit[1];
 </script>
 
 <template>
   <div
-    class="h-full w-full flex items-start justify-start bg-neutral-900 relative"
+    class="h-full w-full flex flex-col items-start justify-start bg-neutral-900 relative"
   >
     <img
       src="/avatar.png"
       alt="Jakub Dajczak"
-      class="absolute m-8 top-0 right-0 m-4 rounded-full h-40 w-40 shadow-lg"
+      class="absolute m-8 top-0 right-0 rounded-full h-40 w-40 shadow-lg"
     />
 
     <h1 class="text-2xl m-0 pt-40 pl-20 font-bold text-left text-white">
-      Jakub Dajczak
+      {{ author }}
     </h1>
-    <h1 class="text-8xl pl-20 font-bold text-left text-white">
-      {{ mainTitle }}
+    <h1 class="text-8xl mt-[21px] mb-0 pl-20 font-bold text-left text-white">
+      {{ title }}
     </h1>
-    <p class="text-4xl pl-20 font-bold text-left text-white">
+    <p class="text-4xl mt-[38px] mb-0 pl-20 font-bold text-left text-white">
       {{ subTitle }}
     </p>
 

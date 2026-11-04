@@ -15,9 +15,10 @@
       class="flex-1 border-b border-dashed border-gray-300 dark:border-gray-800 group-hover:border-gray-700"
     ></div>
     <UAvatar
+      :as="{ img: 'img' }"
       :src="project.thumbnail"
-      :ui="{ rounded: 'rounded z-10 relative' }"
-      size="md"
+      :ui="{ root: 'rounded-sm z-10 relative bg-transparent' }"
+      size="xl"
       :alt="project.name"
     />
   </NuxtLink>

@@ -53,7 +53,7 @@ const title = "Jakub Dajczak";
 const description =
   "I'm Jakub, a fullstack developer from Gdańsk, Poland. I work with Ruby on Rails, Python, JavaScript, and APIs.";
 
-defineOgImageComponent("Page", {
+defineOgImage("Page", {
   title,
   subTitle: "Personal blog about programming and technology",
   author: "",

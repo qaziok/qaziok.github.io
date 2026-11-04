@@ -5,7 +5,7 @@
       {{ description }}
     </p>
     <div
-      class="mt-2 border dark:border-white/10 rounded-lg shadow-sm overflow-hidden"
+      class="mt-2 border dark:border-white/10 rounded-lg shadow-xs overflow-hidden"
     >
       <div class="p-2 flex items-center gap-2 border-b dark:border-white/10">
         <div class="flex items-center w-full">
@@ -13,7 +13,7 @@
             @click="tab = 'preview'"
             label="Preview"
             variant="soft"
-            color="white"
+            color="neutral"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'preview' }"
@@ -22,7 +22,7 @@
             @click="tab = 'code'"
             label="Code"
             variant="soft"
-            color="white"
+            color="neutral"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'code' }"
@@ -32,7 +32,7 @@
             @click="tab = 'usage'"
             label="Usage"
             variant="soft"
-            color="white"
+            color="neutral"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'usage' }"
@@ -42,7 +42,7 @@
             @click="tab = 'credit'"
             label="Credits"
             variant="soft"
-            color="white"
+            color="neutral"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
             :class="{ 'active-tab': tab === 'credit' }"

@@ -16,7 +16,7 @@
         animationDelay: Math.random() * 1 + 's',
         animationDuration: streakSpeed,
       }"
-      class="streak absolute left-0 w-1/5 h-0.5 bg-gradient-to-r from-transparent to-black/60 dark:to-white/40"
+      class="streak absolute left-0 w-1/5 h-0.5 bg-linear-to-r from-transparent to-black/60 dark:to-white/40"
     ></span>
   </div>
 </template>

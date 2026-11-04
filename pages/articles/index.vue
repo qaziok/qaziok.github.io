@@ -21,12 +21,12 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent("Page", {
+defineOgImage("Page", {
   title: "Articles",
   subTitle: "Write-ups on coding and tech topics",
 });
 
 const { data: articles } = await useAsyncData("all-articles", () =>
-  queryContent("/articles").sort({ published: -1 }).find()
+  queryCollection("articles").order("published", "DESC").all()
 );
 </script>
