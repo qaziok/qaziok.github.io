@@ -1,17 +1,3 @@
-import type { Nuxt } from "nuxt/schema";
-
-// Keep the plain MDC prose components so articles stay styled by `prose`.
-const removeNuxtUiProse = (_options: unknown, nuxt: Nuxt) => {
-  nuxt.hook("components:dirs", (dirs) => {
-    const index = dirs.findIndex((dir) =>
-      String(typeof dir === "string" ? dir : dir.path).includes(
-        "@nuxt/ui/dist/runtime/components/prose"
-      )
-    );
-    if (index !== -1) dirs.splice(index, 1);
-  });
-};
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
@@ -22,7 +8,6 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
-    removeNuxtUiProse,
   ],
 
   css: ["~/assets/css/main.css"],
