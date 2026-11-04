@@ -19,25 +19,29 @@ export default {
   methods: {
     getTheme() {
       const mode = useColorMode().value === "dark" ? "dark" : "light";
-      // The giscus iframe is HTTPS, so it can't load a theme over plain HTTP.
-      return window.location.protocol === "https:"
-        ? `${window.location.origin}/giscus/${mode}.css`
-        : `noborder_${mode}`;
+      return `${useRuntimeConfig().public.giscusThemeBase}/${mode}.css`;
     },
     initializeGiscus() {
       const scriptTag = document.createElement("SCRIPT");
       scriptTag.setAttribute("src", "https://giscus.app/client.js");
       scriptTag.setAttribute("data-repo", "qaziok/qaziok.github.io");
       scriptTag.setAttribute("data-repo-id", "R_kgDOMenMCQ");
-      scriptTag.setAttribute("data-category", "Blog");
-      scriptTag.setAttribute("data-category-id", "DIC_kwDOMenMCc4CpIS2");
-      // Outside production, comment in separate test discussions. Strict
-      // matching keeps them off the production pages, and needs the same term
-      // with or without a trailing slash.
-      const path = window.location.pathname.replace(/^\/|\/$/g, "");
+      // Outside production, comment in a separate test category. Strict matching
+      // needs the same term with or without a trailing slash.
       const isProduction = window.location.hostname === "qaziok.github.io";
+      scriptTag.setAttribute(
+        "data-category",
+        isProduction ? "Blog" : "Blog-dev"
+      );
+      scriptTag.setAttribute(
+        "data-category-id",
+        isProduction ? "DIC_kwDOMenMCc4CpIS2" : "DIC_kwDOMenMCc4DKW2J"
+      );
       scriptTag.setAttribute("data-mapping", "specific");
-      scriptTag.setAttribute("data-term", isProduction ? path : `${path}-dev`);
+      scriptTag.setAttribute(
+        "data-term",
+        window.location.pathname.replace(/^\/|\/$/g, "")
+      );
       scriptTag.setAttribute("data-strict", "1");
       scriptTag.setAttribute("data-reactions-enabled", "1");
       scriptTag.setAttribute("data-emit-metadata", "0");

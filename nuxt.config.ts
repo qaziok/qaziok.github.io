@@ -80,6 +80,12 @@ export default defineNuxtConfig({
     ],
   },
 
+  runtimeConfig: {
+    public: {
+      giscusThemeBase: "https://qaziok.github.io/giscus",
+    },
+  },
+
   site: {
     url: "https://qaziok.github.io",
     name: "Jakub Dajczak's personal blog",
