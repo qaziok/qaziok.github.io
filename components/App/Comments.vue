@@ -18,9 +18,11 @@ export default {
   },
   methods: {
     getTheme() {
-      return useColorMode().value === "dark"
-        ? "noborder_dark"
-        : "noborder_light";
+      const mode = useColorMode().value === "dark" ? "dark" : "light";
+      // The giscus iframe is HTTPS, so it can't load a theme over plain HTTP.
+      return window.location.protocol === "https:"
+        ? `${window.location.origin}/giscus/${mode}.css`
+        : `noborder_${mode}`;
     },
     initializeGiscus() {
       const scriptTag = document.createElement("SCRIPT");
