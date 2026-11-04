@@ -31,8 +31,14 @@ export default {
       scriptTag.setAttribute("data-repo-id", "R_kgDOMenMCQ");
       scriptTag.setAttribute("data-category", "Blog");
       scriptTag.setAttribute("data-category-id", "DIC_kwDOMenMCc4CpIS2");
-      scriptTag.setAttribute("data-mapping", "pathname");
-      scriptTag.setAttribute("data-strict", "0");
+      // Outside production, comment in separate test discussions. Strict
+      // matching keeps them off the production pages, and needs the same term
+      // with or without a trailing slash.
+      const path = window.location.pathname.replace(/^\/|\/$/g, "");
+      const isProduction = window.location.hostname === "qaziok.github.io";
+      scriptTag.setAttribute("data-mapping", "specific");
+      scriptTag.setAttribute("data-term", isProduction ? path : `${path}-dev`);
+      scriptTag.setAttribute("data-strict", "1");
       scriptTag.setAttribute("data-reactions-enabled", "1");
       scriptTag.setAttribute("data-emit-metadata", "0");
       scriptTag.setAttribute("data-input-position", "top");
