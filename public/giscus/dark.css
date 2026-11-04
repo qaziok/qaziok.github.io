@@ -33,12 +33,19 @@ textarea {
 }
 
 .gsc-comments-count,
+.gsc-comments-count *,
+.gsc-comments-count-separator,
+.gsc-replies-count,
 .gsc-reactions-count {
   color: #a3a3a3;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.gsc-comments-count a {
+  text-decoration: none !important;
 }
 
 .gsc-comment-box,
