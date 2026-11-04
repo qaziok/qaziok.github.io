@@ -57,3 +57,12 @@ textarea {
 .btn {
   border-radius: 0.375rem;
 }
+
+.gsc-reactions-popover > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gsc-reactions-popover .gsc-emoji-button {
+  margin: 0;
+}
