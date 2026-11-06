@@ -4,7 +4,7 @@
   "scripts": {
     "build": "nuxt build --preset github_pages",
     "dev": "nuxt dev -p 2137 --host",
-    "serve": "npx serve -l 2137 .output/public",
+    "serve": "serve -l 2137 .output/public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -23,6 +23,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "satori": "^0.47.1",
+    "serve": "^14.2.7",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.4"
   },
