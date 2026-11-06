@@ -12,13 +12,6 @@
     "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 
-  --shadow-zoop:
-    rgba(102, 109, 128, 0.08) 0px 1.2672px 1.2672px 0px,
-    rgba(102, 109, 128, 0.08) 0px 5.06879px 10.1376px 0px;
-  --shadow-zoopdark:
-    rgba(10, 10, 10, 0.2) 0px 1.2672px 1.2672px 0px,
-    rgba(10, 10, 10, 0.2) 0px 5.06879px 10.1376px 0px;
-
   /* The site's `gray-*` classes have always rendered the neutral palette. */
   --color-gray-50: var(--color-neutral-50);
   --color-gray-100: var(--color-neutral-100);
@@ -30,7 +23,6 @@
   --color-gray-700: var(--color-neutral-700);
   --color-gray-800: var(--color-neutral-800);
   --color-gray-900: var(--color-neutral-900);
-  --color-gray-950: var(--color-neutral-950);
 
   --color-primary-400: var(--color-teal-400);
   --color-primary-500: var(--color-teal-500);
