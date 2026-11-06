@@ -3,7 +3,7 @@
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
       FEATURED PROEJCTS
     </h2>
-    <div class="[&>*+*]:mt-4 [&>*+*]:mb-0">
+    <div class="flex flex-col gap-8">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"

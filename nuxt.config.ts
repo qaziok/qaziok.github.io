@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/image",
     "@nuxt/content",
-    "@vueuse/nuxt",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
   ],
@@ -26,18 +25,6 @@ export default defineNuxtConfig({
   },
 
   content: {
-    build: {
-      markdown: {
-        highlight: {
-          theme: {
-            default: "github-dark", // Light theme do not work great for now :(
-            dark: "github-dark",
-            light: "github-dark",
-          },
-          langs: ["python"],
-        },
-      },
-    },
     experimental: {
       sqliteConnector: "native",
     },

@@ -9,7 +9,6 @@
           class="flex items-center gap-3 hover:bg-gray-100 dark:hover:bg-white/10 p-2 rounded-lg -m-2 text-sm min-w-0"
         >
           <UAvatar
-            :as="{ img: 'img' }"
             :src="getThumbnail(bookmark.url)"
             :alt="bookmark.label"
             :ui="{ root: 'rounded-md bg-transparent' }"

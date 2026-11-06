@@ -1,7 +1,7 @@
 <template>
   <main>
     <AppHeader class="mb-12" title="Projects" :description="description" />
-    <div class="[&>*+*]:mt-4 [&>*+*]:mb-0">
+    <div class="flex flex-col gap-8">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"

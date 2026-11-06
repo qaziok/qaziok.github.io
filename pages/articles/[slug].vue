@@ -4,11 +4,9 @@
       class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
     >
       <article v-if="doc">
-        <article>
-          <h1>{{ doc.title }}</h1>
-          <ContentRenderer :value="doc" />
-          <AppComments />
-        </article>
+        <h1>{{ doc.title }}</h1>
+        <ContentRenderer :value="doc" />
+        <AppComments />
       </article>
       <h3 v-else>Sorry, but the article you're looking for doesn't exist.</h3>
     </div>
