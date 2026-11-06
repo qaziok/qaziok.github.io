@@ -1,3 +1,5 @@
+import { definePerson } from "nuxt-schema-org/schema";
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
@@ -5,8 +7,11 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/image",
     "@nuxt/content",
+    "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
+    "nuxt-schema-org",
+    "nuxt-seo-utils",
   ],
 
   css: ["~/assets/css/main.css"],
@@ -14,6 +19,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
+      titleTemplate: "%s",
       htmlAttrs: {
         lang: "en",
         class: "h-full",
@@ -55,6 +61,19 @@ export default defineNuxtConfig({
   site: {
     url: "https://qaziok.github.io",
     name: "Jakub Dajczak's personal blog",
+    trailingSlash: true,
+  },
+
+  schemaOrg: {
+    identity: definePerson({
+      name: "Jakub Dajczak",
+      image: "/avatar.png",
+      url: "https://qaziok.github.io",
+      sameAs: [
+        "https://github.com/qaziok",
+        "https://www.linkedin.com/in/qaziok/",
+      ],
+    }),
   },
 
   compatibilityDate: "2025-01-30",
