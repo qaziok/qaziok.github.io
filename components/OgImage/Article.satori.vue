@@ -11,6 +11,7 @@ const prop = withDefaults(
 const titleSplit = prop["title"].split("-");
 const mainTitle = titleSplit[0];
 const subTitle = titleSplit[1];
+const titleSize = mainTitle.length > 20 ? "72px" : "96px";
 </script>
 
 <template>
@@ -26,7 +27,10 @@ const subTitle = titleSplit[1];
     <h1 class="text-2xl m-0 pt-40 pl-20 font-bold text-left text-white">
       Jakub Dajczak
     </h1>
-    <h1 class="text-8xl mt-[21px] mb-0 pl-20 font-bold text-left text-white">
+    <h1
+      class="mt-[21px] mb-0 px-20 font-bold text-left text-white"
+      :style="{ fontSize: titleSize, lineHeight: 1 }"
+    >
       {{ mainTitle }}
     </h1>
     <p class="text-4xl mt-[38px] mb-0 pl-20 font-bold text-left text-white">

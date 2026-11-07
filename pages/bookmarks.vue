@@ -27,6 +27,8 @@
 </template>
 
 <script setup>
+definePageMeta({ path: "/bookmarks/" });
+
 const title = "Bookmarks | Jakub Dajczak";
 const description =
   "Awesome things I've found on the internet. Hope you'll find something useful here.";
@@ -56,16 +58,11 @@ const bookmarks = [
   },
   {
     id: 3,
-    label: "Phind.com - Great AI search engine",
-    url: "https://www.phind.com",
-  },
-  {
-    id: 4,
     label: "Coolors - The super fast color schemes generator!",
     url: "https://coolors.co/",
   },
   {
-    id: 5,
+    id: 4,
     label: "GPRM - GitHub Profile ReadMe Maker",
     url: "https://gprm.itsvg.in/",
   },
