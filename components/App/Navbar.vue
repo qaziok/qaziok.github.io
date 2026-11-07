@@ -43,17 +43,17 @@ const items = [
   { name: "Home", path: "/", icon: "solar:home-smile-outline" },
   {
     name: "Projects",
-    path: "/projects",
+    path: "/projects/",
     icon: "solar:folder-with-files-outline",
   },
   {
     name: "Articles",
-    path: "/articles",
+    path: "/articles/",
     icon: "solar:document-add-outline",
   },
   {
     name: "Bookmarks",
-    path: "/bookmarks",
+    path: "/bookmarks/",
     icon: "solar:bookmark-linear",
   },
 ];
