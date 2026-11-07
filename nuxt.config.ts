@@ -7,11 +7,9 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/image",
     "@nuxt/content",
-    "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
     "nuxt-schema-org",
-    "nuxt-seo-utils",
   ],
 
   css: ["~/assets/css/main.css"],
@@ -19,7 +17,6 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
-      titleTemplate: "%s",
       htmlAttrs: {
         lang: "en",
         class: "h-full",
@@ -63,13 +60,6 @@ export default defineNuxtConfig({
       nuxtLink: {
         trailingSlash: "append",
       },
-    },
-  },
-
-  nitro: {
-    prerender: {
-      // Links use trailing slashes, so these would otherwise be written twice
-      ignore: [/^\/(articles|bookmarks|projects)$/],
     },
   },
 

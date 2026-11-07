@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://qaziok.github.io/sitemap.xml
