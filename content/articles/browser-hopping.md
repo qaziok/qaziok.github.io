@@ -68,7 +68,7 @@ It also has a theme store that allows you to change the browser's look or functi
 that's something cool.
 
 ![Zen Browser's themes](articles/browser-hopping/zen-browser-themes.png)
-You can check it here: [Zen Browser's Themes](https://www.zen-browser.app/themes)
+You can check it here: [Zen Browser's Themes](https://zen-browser.app/mods)
 
 I've been using it for a week now, and it's great. I need to mention that it's only an alpha release,
 but so far, I have not encountered any bugs. If anyone wants to try it, it's available for Windows, macOS, and Linux.
