@@ -28,9 +28,11 @@
       <p>
         Over my few years as a developer, I've worked with several programming
         languages, but I feel most comfortable with Ruby (which I work with
-        daily) and Python (which I use for private projects). I've also worked
-        on a few C# projects and dabbled in Java, JavaScript, Vue, and Docker.
-        These days, I use Mac and Linux for my development work.
+        daily) and Python (which I use for private projects). Most of my
+        experience is in building APIs with REST and GraphQL, and on the
+        frontend I work with Vue and Ember. I've also worked on a few C#
+        projects and dabbled in Java and Docker. These days, I use Mac and Linux
+        for my development work.
       </p>
       <p>
         I decided to build this website not out of necessity, but because I
