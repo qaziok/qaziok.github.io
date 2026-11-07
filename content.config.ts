@@ -20,6 +20,18 @@ export default defineContentConfig({
         thumbnail: z.string(),
       }),
     }),
+    experience: defineCollection({
+      type: "data",
+      source: "experience/*.json",
+      schema: z.object({
+        title: z.string(),
+        company: z.string(),
+        url: z.string(),
+        period: z.string(),
+        points: z.array(z.string()),
+        tags: z.array(z.string()),
+      }),
+    }),
     links: defineCollection({
       type: "data",
       source: "links/*.json",
