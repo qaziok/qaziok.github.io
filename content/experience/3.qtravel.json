@@ -1,0 +1,14 @@
+{
+  "title": "Fullstack Developer",
+  "company": "Qtravel.ai",
+  "url": "https://www.qtravel.ai",
+  "period": "2022 - 2025",
+  "points": [
+    "Lead developer of GraphQL API based on Ruby on Rails",
+    "Building and optimization of complex Solr queries",
+    "Research and integration of NLP tools for query analysis",
+    "Development of comprehensive unit and end-to-end tests",
+    "Creation and maintenance of technical documentation"
+  ],
+  "tags": ["Ruby on Rails", "GraphQL", "Apache Solr", "NLP", "Python", "Docker"]
+}

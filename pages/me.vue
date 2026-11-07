@@ -25,7 +25,7 @@
         Jakub Dajczak
       </h1>
       <p class="text-gray-900 dark:text-gray-400 max-w-xs mx-auto">
-        Software developer from Gdańsk, Poland. In my free time, I'm traveling
+        Fullstack developer from Gdańsk, Poland. In my free time, I'm traveling
         the world and playing video games.
       </p>
     </div>
@@ -73,7 +73,7 @@ definePageMeta({
 
 const title = "Jakub Dajczak";
 const description =
-  "Software developer from Gdańsk, Poland. Tech enthusiast and gamer.";
+  "Fullstack developer from Gdańsk, Poland. Tech enthusiast and gamer.";
 
 defineOgImage("Page", {
   title,
