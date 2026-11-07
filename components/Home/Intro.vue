@@ -16,23 +16,26 @@
     </h1>
     <div class="space-y-4 text-gray-900 dark:text-gray-400">
       <p>
-        I'm Jakub, a software developer from Gdańsk, Poland. I hold a Bachelor's
+        I'm Jakub, a fullstack developer from Gdańsk, Poland. I got a Bachelor's
         degree in Computer Science from Gdańsk University of Technology.
       </p>
       <p>
-        Currently, I'm working as a Fullstack Developer at
+        Currently, I'm working at
         <a href="https://www.dochub.com" target="_blank" class="underline"
           >DocHub</a
-        >, where I work with Ruby on Rails, Vue, Ember, REST, and Sidekiq.
+        >
+        with technologies like Ruby on Rails, Python, Vue and Ember, mostly on
+        AI integrations and new features.
       </p>
       <p>
-        Over my few years as a developer, I've worked with several programming
-        languages, but I feel most comfortable with Ruby (which I work with
-        daily) and Python (which I use for private projects). Most of my
-        experience is in building APIs with REST and GraphQL, and on the
-        frontend I work with Vue and Ember. I've also worked on a few C#
-        projects and dabbled in Java and Docker. These days, I use Mac and Linux
-        for my development work.
+        These days, I mostly use Mac and Linux for development, and Cursor and
+        Claude Code when it comes to new AI tools.
+      </p>
+      <p>
+        Over the years as a developer, I've worked with several programming
+        languages and frameworks, but I feel that in the age of LLMs this
+        doesn't matter as much as understanding the ideas and planning your work
+        properly.
       </p>
       <p>
         I decided to build this website not out of necessity, but because I
@@ -52,7 +55,7 @@
 <script setup>
 const title = "Jakub Dajczak";
 const description =
-  "I'm Jakub, a fullstack developer from Gdańsk, Poland. I work with Ruby on Rails, Python, JavaScript, and APIs.";
+  "I'm Jakub, a fullstack developer from Gdańsk, Poland. I write about programming, AI tools and projects I tinker with.";
 
 defineOgImage("Page", {
   title,
