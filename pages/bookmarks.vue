@@ -11,7 +11,7 @@
           <UAvatar
             :src="getThumbnail(bookmark.url)"
             :alt="bookmark.label"
-            :ui="{ rounded: 'rounded-md' }"
+            :ui="{ root: 'rounded-md bg-transparent' }"
           />
           <p class="truncate text-gray-700 dark:text-gray-200">
             {{ bookmark.label }}
@@ -38,7 +38,7 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent("Page", {
+defineOgImage("Page", {
   title: "Bookmarks",
   subTitle: "Some interesting links I found on the internet",
 });

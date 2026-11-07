@@ -3,20 +3,13 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxt/ui",
-    "nuxt-icon",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/fontaine",
     "@nuxt/image",
     "@nuxt/content",
-    "@nuxthq/studio",
-    "@vueuse/nuxt",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
   ],
 
-  ui: {
-    icons: ["heroicons", "lucide"],
-  },
+  css: ["~/assets/css/main.css"],
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -32,30 +25,36 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: {
-        default: "github-dark", // Light theme do not work great for now :(
-        dark: "github-dark",
-      },
+    experimental: {
+      sqliteConnector: "native",
     },
   },
 
-  googleFonts: {
-    display: "swap",
-    families: {
-      Inter: [400, 500, 600, 700, 800, 900],
+  mdc: {
+    highlight: {
+      theme: {
+        default: "github-light",
+        dark: "github-dark",
+        light: "github-light",
+      },
+      langs: ["python"],
     },
+  },
+
+  fonts: {
+    families: [
+      {
+        name: "Inter",
+        provider: "google",
+        weights: [400, 500, 600, 700, 800, 900],
+      },
+      { name: "Cascadia Code", provider: "none" },
+    ],
   },
 
   site: {
     url: "https://qaziok.github.io",
     name: "Jakub Dajczak's personal blog",
-  },
-
-  mdc: {
-    highlight: {
-      langs: ['python']
-    }
   },
 
   compatibilityDate: "2025-01-30",

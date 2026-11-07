@@ -42,7 +42,7 @@
             :href="link.filename ? `/${link.filename}` : link.url"
             :download="link.filename"
             :class="[
-              'group flex items-center gap-4 px-4 py-3 rounded-full border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-800/90 backdrop-blur hover:text-primary-500 dark:hover:text-primary-400 hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-200',
+              'group flex items-center gap-4 px-4 py-3 rounded-full border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm hover:text-primary-500 dark:hover:text-primary-400 hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-200',
               { 'cursor-pointer': link.filename },
             ]"
           >
@@ -54,7 +54,7 @@
               </Icon>
             </div>
             <span
-              class="text-sm text-gray-700 dark:text-gray-300 flex-grow text-left"
+              class="text-sm text-gray-700 dark:text-gray-300 grow text-left"
             >
               {{ link.name }}
             </span>
@@ -74,7 +74,7 @@ const title = "Jakub Dajczak";
 const description =
   "Software developer from Gdańsk, Poland. Tech enthusiast and gamer.";
 
-defineOgImageComponent("Page", {
+defineOgImage("Page", {
   title,
   subTitle: "Personal blog about programming and technology",
   author: "",
@@ -89,14 +89,7 @@ useSeoMeta({
 
 const { data: links, error } = await useAsyncData("links", async () => {
   try {
-    return await queryContent("/links")
-      .where({
-        $or: [
-          { tags: { $contains: "portfolio" } },
-          { tags: { $contains: "contact" } },
-        ],
-      })
-      .find();
+    return await queryCollection("links").order("stem", "ASC").all();
   } catch (e) {
     console.error("Failed to fetch links:", e);
     return [];

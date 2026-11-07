@@ -13,7 +13,7 @@
         label="All Articles &rarr;"
         to="/articles"
         variant="link"
-        color="gray"
+        color="neutral"
       />
     </div>
   </div>
@@ -21,10 +21,10 @@
 
 <script lang="ts" setup>
 const { data: articles } = await useAsyncData("articles-home", () =>
-  queryContent("/articles")
-    .sort({ published: -1 })
+  queryCollection("articles")
+    .order("published", "DESC")
     .limit(3)
-    .only(["title", "description", "published", "slug", "_path"])
-    .find()
+    .select("title", "description", "published", "slug", "path")
+    .all()
 );
 </script>
