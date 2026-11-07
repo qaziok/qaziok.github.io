@@ -14,6 +14,8 @@
 </template>
 
 <script setup>
+import { defineArticle, useSchemaOrg } from "#schema-org/app";
+
 const route = useRoute();
 const { slug } = route.params;
 const { data: doc } = await useAsyncData(`article-${slug}`, () =>
@@ -25,9 +27,18 @@ useSeoMeta({
   description: doc.value?.description,
   ogTitle: doc.value?.title,
   ogDescription: doc.value?.description,
+  ogType: "article",
   twitterCard: "summary_large_image",
   articleAuthor: "Jakub Dajczak",
 });
+
+useSchemaOrg([
+  defineArticle({
+    headline: doc.value?.title,
+    description: doc.value?.description,
+    datePublished: doc.value?.published.replaceAll("/", "-"),
+  }),
+]);
 
 defineOgImage("Article", { title: doc.value?.title });
 </script>

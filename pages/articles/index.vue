@@ -10,6 +10,8 @@
 </template>
 
 <script setup>
+definePageMeta({ path: "/articles/" });
+
 const title = "Articles | Jakub Dajczak";
 const description =
   "All of my articles. This section is important to me because I want to share what I’ve learned, what I’ve accomplished, and the struggles I’ve overcome. I hope you enjoy them.";
