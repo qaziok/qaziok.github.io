@@ -26,9 +26,9 @@
 
 <script lang="ts" setup>
 const { data: links } = await useAsyncData("social-links", () =>
-  queryContent("/links")
-    .where({ tags: { $contains: "social" } })
-    .find()
+  queryCollection("links").order("stem", "ASC").all()
 );
-const socialLinks = computed(() => links.value || []);
+const socialLinks = computed(() =>
+  (links.value || []).filter((link) => link.tags.includes("social"))
+);
 </script>

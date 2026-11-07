@@ -1,7 +1,7 @@
 <template>
   <main>
     <AppHeader class="mb-12" title="Projects" :description="description" />
-    <div class="space-y-4">
+    <div class="flex flex-col gap-8">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"
@@ -23,12 +23,12 @@ useSeoMeta({
   ogDescription: description,
 });
 
-defineOgImageComponent("Page", {
+defineOgImage("Page", {
   title: "Projects",
   subTitle: "Work that I've done and that I'm proud of",
 });
 
 const { data: projects } = await useAsyncData("projects-all", () =>
-  queryContent("/projects").find()
+  queryCollection("projects").order("stem", "ASC").all()
 );
 </script>

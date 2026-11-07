@@ -4,32 +4,35 @@
   "scripts": {
     "build": "nuxt build --preset github_pages",
     "dev": "nuxt dev -p 2137 --host",
-    "serve": "npx serve -l 2137 .output/public",
+    "serve": "serve -l 2137 .output/public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.10.0",
-    "@nuxt/devtools": "1.0.5",
-    "@nuxthq/studio": "1.0.6",
-    "@nuxtjs/fontaine": "^0.4.1",
-    "@nuxtjs/google-fonts": "3.1.1",
-    "@nuxtjs/sitemap": "^6.0.0-beta.4",
-    "nuxt": "^3.13.0",
-    "nuxt-icon": "0.6.7",
-    "nuxt-og-image": "^3.0.0-rc.65",
-    "prettier": "3.6.2",
-    "prettier-plugin-tailwindcss": "0.5.9",
-    "serve": "^14.2.3",
-    "yarn-upgrade-all": "^0.7.2"
+    "@iconify-json/lucide": "^1.2.151",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/solar": "^1.2.13",
+    "@nuxt/content": "^3.16.2",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/typography": "^0.5.20",
+    "nuxt": "^4.6.4",
+    "nuxt-og-image": "^7.0.7",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "satori": "^0.47.1",
+    "serve": "^14.2.7",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.4"
   },
   "dependencies": {
-    "@iconify-json/lucide": "1.1.145",
-    "@nuxt/image": "1.1.0",
-    "@nuxt/ui": "2.11.1",
-    "nitropack": "^2.9.7",
-    "postcss-custom-properties": "^13.3.12",
-    "vue-use-fixed-header": "^2.0.0"
+    "@nuxt/image": "^2.2.1",
+    "@nuxt/ui": "^4.12.0",
+    "vue-use-fixed-header": "^2.0.3"
+  },
+  "overrides": {
+    "compression": "^1.8.2"
   }
 }
