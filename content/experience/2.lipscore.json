@@ -1,0 +1,14 @@
+{
+  "title": "Fullstack Developer",
+  "company": "Lipscore",
+  "url": "https://www.lipscore.com",
+  "period": "2025 - 2026",
+  "points": [
+    "Developing and maintaining a Ruby on Rails monolith with Sidekiq and embedded JavaScript widgets",
+    "Database query optimization and performance improvements",
+    "Building comprehensive API documentation using OpenAPI",
+    "Improving AI moderation pipeline using latest LLMs",
+    "Modernizing client-facing integration and widget stack"
+  ],
+  "tags": ["Ruby on Rails", "JavaScript", "REST", "OpenAPI", "Sidekiq"]
+}
