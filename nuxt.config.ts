@@ -58,6 +58,21 @@ export default defineNuxtConfig({
     ],
   },
 
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: "append",
+      },
+    },
+  },
+
+  nitro: {
+    prerender: {
+      // Links use trailing slashes, so these would otherwise be written twice
+      ignore: [/^\/(articles|bookmarks|projects)$/],
+    },
+  },
+
   site: {
     url: "https://qaziok.github.io",
     name: "Jakub Dajczak's personal blog",
