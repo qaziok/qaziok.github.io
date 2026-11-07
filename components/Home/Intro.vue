@@ -23,7 +23,7 @@
         Currently, I'm working as a Fullstack Developer at
         <a href="https://www.dochub.com" target="_blank" class="underline"
           >DocHub</a
-        >.
+        >, where I work with Ruby on Rails, Vue, Ember, REST, and Sidekiq.
       </p>
       <p>
         Over my few years as a developer, I've worked with several programming

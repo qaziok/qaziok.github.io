@@ -23,6 +23,28 @@
             DocHub
           </a>
         </p>
+        <div class="flex flex-wrap gap-2">
+          <span
+            class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"
+            >Ruby on Rails</span
+          >
+          <span
+            class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"
+            >Vue</span
+          >
+          <span
+            class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"
+            >Ember</span
+          >
+          <span
+            class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"
+            >REST</span
+          >
+          <span
+            class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"
+            >Sidekiq</span
+          >
+        </div>
       </div>
 
       <div class="space-y-1">
