@@ -56,6 +56,14 @@ export default defineNuxtConfig({
     ],
   },
 
+  runtimeConfig: {
+    public: {
+      giscusThemeBase: "https://qaziok.github.io/giscus",
+      giscusCategory: "Blog",
+      giscusCategoryId: "DIC_kwDOMenMCc4CpIS2",
+    },
+  },
+
   experimental: {
     defaults: {
       nuxtLink: {
