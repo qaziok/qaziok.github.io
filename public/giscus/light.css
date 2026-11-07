@@ -34,6 +34,8 @@ textarea {
 
 .gsc-comments-count,
 .gsc-comments-count *,
+.gsc-left-header em,
+.gsc-left-header em a,
 .gsc-comments-count-separator,
 .gsc-replies-count,
 .gsc-reactions-count {
@@ -44,8 +46,23 @@ textarea {
   text-transform: uppercase;
 }
 
-.gsc-comments-count a {
+.gsc-comments-count a,
+.gsc-left-header em a {
   text-decoration: none !important;
+}
+
+.gsc-left-header {
+  gap: 0.25rem;
+}
+
+.gsc-left-header em {
+  font-size: 0.75rem !important;
+  font-style: normal;
+}
+
+.gsc-left-header em,
+.gsc-left-header em a {
+  text-transform: none;
 }
 
 .gsc-comment-box,
