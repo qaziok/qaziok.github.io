@@ -12,6 +12,8 @@
 </template>
 
 <script setup>
+definePageMeta({ path: "/projects/" });
+
 const title = "Projects | Jakub Dajczak";
 const description =
   "There are some of my projects that I'm proud of. That's not much, but everyone has to start somewhere.";

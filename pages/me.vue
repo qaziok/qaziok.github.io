@@ -68,6 +68,7 @@
 <script setup lang="ts">
 definePageMeta({
   layout: "minimal",
+  path: "/me/",
 });
 
 const title = "Jakub Dajczak";
