@@ -10,7 +10,28 @@
             Fullstack Developer
           </h3>
           <span class="text-sm text-gray-600 dark:text-gray-400"
-            >2025 - Present</span
+            >2026 - Present</span
+          >
+        </div>
+        <p class="text-gray-600 dark:text-gray-400">
+          <a
+            href="https://www.dochub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-primary-500 transition-colors underline"
+          >
+            DocHub
+          </a>
+        </p>
+      </div>
+
+      <div class="space-y-1">
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">
+            Fullstack Developer
+          </h3>
+          <span class="text-sm text-gray-600 dark:text-gray-400"
+            >2025 - 2026</span
           >
         </div>
         <p class="text-gray-600 dark:text-gray-400">
@@ -23,6 +44,18 @@
             Lipscore
           </a>
         </p>
+        <ul
+          class="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1"
+        >
+          <li>
+            Developing and maintaining a Ruby on Rails monolith with Sidekiq and
+            embedded JavaScript widgets
+          </li>
+          <li>Database query optimization and performance improvements</li>
+          <li>Building comprehensive API documentation using OpenAPI</li>
+          <li>Improving AI moderation pipeline using latest LLMs</li>
+          <li>Modernizing client-facing integration and widget stack</li>
+        </ul>
         <div class="flex flex-wrap gap-2">
           <span
             class="px-2 py-1 text-sm bg-gray-200 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300"

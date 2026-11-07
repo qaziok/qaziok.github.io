@@ -21,10 +21,9 @@
       </p>
       <p>
         Currently, I'm working as a Fullstack Developer at
-        <a href="https://www.lipscore.com" target="_blank" class="underline"
-          >Lipscore</a
-        >, where I work with Ruby on Rails, JavaScript, REST, OpenAPI, and
-        Sidekiq.
+        <a href="https://www.dochub.com" target="_blank" class="underline"
+          >DocHub</a
+        >.
       </p>
       <p>
         Over my few years as a developer, I've worked with several programming
