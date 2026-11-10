@@ -13,7 +13,10 @@ export default defineContentConfig({
         sitemap: defineSitemapSchema({
           name: "articles",
           onUrl(url, entry) {
-            url.lastmod = (entry.updated ?? entry.published).replaceAll("/", "-");
+            url.lastmod = (entry.updated ?? entry.published).replaceAll(
+              "/",
+              "-"
+            );
           },
         }),
       }),

@@ -73,7 +73,7 @@ definePageMeta({
 
 const title = "About me | Jakub Dajczak";
 const description =
-  "Fullstack developer from Gdańsk, Poland. Tech enthusiast and gamer. Find my portfolio, CV, social profiles and contact details all in one place.";
+  "Fullstack developer from Gdańsk, Poland. Tech enthusiast and gamer. Find my portfolio, social profiles and contact details all in one place.";
 
 defineOgImage("Page", {
   title: "Jakub Dajczak",

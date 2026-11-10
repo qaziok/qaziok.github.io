@@ -22,8 +22,8 @@ const { data: doc } = await useAsyncData(`article-${slug}`, () =>
   queryCollection("articles").path(`/articles/${slug}`).first()
 );
 
-const published = doc.value?.published.replaceAll("/", "-");
-const modified = doc.value?.updated?.replaceAll("/", "-") ?? published;
+const published = doc.value && toIsoDate(doc.value.published);
+const modified = doc.value?.updated ? toIsoDate(doc.value.updated) : published;
 
 useSeoMeta({
   title: doc.value?.title,
@@ -47,18 +47,10 @@ useSchemaOrg([
 ]);
 
 const [ogTitle, ogSubTitle] = (doc.value?.title ?? "").split(" - ");
-const publishedLabel = published
-  ? new Date(published).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    })
-  : "";
-
 defineOgImage("Page", {
   title: ogTitle,
   subTitle: ogSubTitle,
-  label: publishedLabel ? `Article · ${publishedLabel}` : "Article",
+  label: doc.value ? `Article · ${formatDate(doc.value.published)}` : "Article",
 });
 </script>
 <style>
