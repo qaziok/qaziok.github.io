@@ -1,52 +1,58 @@
 <script setup lang="ts">
-withDefaults(
+const props = withDefaults(
   defineProps<{
     title?: string;
     subTitle?: string;
-    author?: string;
+    label?: string;
   }>(),
   {
     title: "title",
-    subTitle: "subTitle",
-    author: "Jakub Dajczak",
+    subTitle: "",
+    label: "Personal blog",
   }
 );
+
+const titleSize = props.title.length > 24 ? "76px" : "96px";
 </script>
 
 <template>
   <div
-    class="h-full w-full flex flex-col items-start justify-start bg-neutral-900 relative"
+    class="w-full h-full flex flex-col justify-between relative bg-black px-24 pt-[72px] pb-20"
+    :style="{ boxSizing: 'border-box' }"
   >
-    <img
-      src="/avatar.png"
-      alt="Jakub Dajczak"
-      class="absolute m-8 top-0 right-0 rounded-full h-40 w-40 shadow-lg"
+    <div class="flex items-center">
+      <img
+        src="/avatar.png"
+        alt="Jakub Dajczak"
+        class="rounded-full w-20 h-20 mr-6 border-4 border-neutral-800"
+      />
+      <div class="flex flex-col">
+        <div class="flex font-bold text-[30px] text-neutral-100">
+          Jakub Dajczak
+        </div>
+        <div class="flex text-2xl text-neutral-400">qaziok.github.io</div>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div
+        class="flex font-bold uppercase text-[22px] tracking-widest text-neutral-400 mb-5"
+      >
+        {{ label }}
+      </div>
+      <div
+        class="flex font-bold text-white tracking-tight leading-[1.1]"
+        :style="{ fontSize: titleSize, textWrap: 'balance' }"
+      >
+        {{ title }}
+      </div>
+      <div v-if="subTitle" class="flex mt-5 text-4xl text-neutral-400">
+        {{ subTitle }}
+      </div>
+    </div>
+
+    <div
+      class="flex absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-teal-400/0 via-teal-400/70 to-teal-400/0"
     />
-
-    <h1 class="text-2xl m-0 pt-40 pl-20 font-bold text-left text-white">
-      {{ author }}
-    </h1>
-    <h1 class="text-8xl mt-[21px] mb-0 pl-20 font-bold text-left text-white">
-      {{ title }}
-    </h1>
-    <p class="text-4xl mt-[38px] mb-0 pl-20 font-bold text-left text-white">
-      {{ subTitle }}
-    </p>
-
-    <svg
-      class="absolute bottom-0 left-0 right-0"
-      viewBox="0 0 1200 627"
-      width="1200"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1FBBAA" stop-opacity="0" />
-          <stop offset="100%" stop-color="#1FBBAA" stop-opacity="0.5" />
-        </linearGradient>
-      </defs>
-      <rect x="0" y="471" width="1200" height="157" fill="url(#gradient)" />
-    </svg>
   </div>
 </template>

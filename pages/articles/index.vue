@@ -26,6 +26,7 @@ useSeoMeta({
 defineOgImage("Page", {
   title: "Articles",
   subTitle: "Write-ups on coding and tech topics",
+  label: "Blog",
 });
 
 const { data: articles } = await useAsyncData("all-articles", () =>

@@ -71,14 +71,13 @@ definePageMeta({
   path: "/me/",
 });
 
-const title = "Jakub Dajczak";
+const title = "About me | Jakub Dajczak";
 const description =
-  "Fullstack developer from Gdańsk, Poland. Tech enthusiast and gamer.";
+  "Fullstack developer from Gdańsk, Poland. Tech enthusiast and gamer. Find my portfolio, social profiles and contact details all in one place.";
 
 defineOgImage("Page", {
-  title,
+  title: "Jakub Dajczak",
   subTitle: "Personal blog about programming and technology",
-  author: "",
 });
 
 useSeoMeta({

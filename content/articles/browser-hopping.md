@@ -1,6 +1,6 @@
 ---
 title: "Browser hopping - My journey through the web browsers"
-description: "Choosing the right browser is a never-ending quest"
+description: "Choosing the right browser is a never-ending quest. My journey from Chrome through Edge, Brave and Arc to Zen Browser, and what I learned along the way."
 published: 2024/08/26
 slug: "browser-hopping"
 ---

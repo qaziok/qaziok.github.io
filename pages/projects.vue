@@ -28,6 +28,7 @@ useSeoMeta({
 defineOgImage("Page", {
   title: "Projects",
   subTitle: "Work that I've done and that I'm proud of",
+  label: "Portfolio",
 });
 
 const { data: projects } = await useAsyncData("projects-all", () =>
