@@ -60,7 +60,6 @@ const description =
 defineOgImage("Page", {
   title,
   subTitle: "Personal blog about programming and technology",
-  author: "",
 });
 
 useSeoMeta({

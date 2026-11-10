@@ -43,6 +43,7 @@ useSeoMeta({
 defineOgImage("Page", {
   title: "Bookmarks",
   subTitle: "Some interesting links I found on the internet",
+  label: "Links",
 });
 
 const bookmarks = [

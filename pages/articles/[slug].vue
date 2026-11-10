@@ -46,7 +46,20 @@ useSchemaOrg([
   }),
 ]);
 
-defineOgImage("Article", { title: doc.value?.title });
+const [ogTitle, ogSubTitle] = (doc.value?.title ?? "").split(" - ");
+const publishedLabel = published
+  ? new Date(published).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
+  : "";
+
+defineOgImage("Page", {
+  title: ogTitle,
+  subTitle: ogSubTitle,
+  label: publishedLabel ? `Article · ${publishedLabel}` : "Article",
+});
 </script>
 <style>
 .prose h2 a,

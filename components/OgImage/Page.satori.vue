@@ -1,52 +1,99 @@
 <script setup lang="ts">
-withDefaults(
+const props = withDefaults(
   defineProps<{
     title?: string;
     subTitle?: string;
-    author?: string;
+    label?: string;
   }>(),
   {
     title: "title",
-    subTitle: "subTitle",
-    author: "Jakub Dajczak",
+    subTitle: "",
+    label: "Personal blog",
   }
 );
+
+const titleSize = props.title.length > 24 ? "76px" : "96px";
 </script>
 
 <template>
   <div
-    class="h-full w-full flex flex-col items-start justify-start bg-neutral-900 relative"
+    class="flex relative"
+    :style="{ width: '1200px', height: '600px', backgroundColor: '#000000' }"
   >
-    <img
-      src="/avatar.png"
-      alt="Jakub Dajczak"
-      class="absolute m-8 top-0 right-0 rounded-full h-40 w-40 shadow-lg"
-    />
-
-    <h1 class="text-2xl m-0 pt-40 pl-20 font-bold text-left text-white">
-      {{ author }}
-    </h1>
-    <h1 class="text-8xl mt-[21px] mb-0 pl-20 font-bold text-left text-white">
-      {{ title }}
-    </h1>
-    <p class="text-4xl mt-[38px] mb-0 pl-20 font-bold text-left text-white">
-      {{ subTitle }}
-    </p>
-
-    <svg
-      class="absolute bottom-0 left-0 right-0"
-      viewBox="0 0 1200 627"
-      width="1200"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="flex flex-col justify-between absolute"
+      :style="{ top: '72px', left: '96px', right: '96px', bottom: '80px' }"
     >
-      <defs>
-        <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1FBBAA" stop-opacity="0" />
-          <stop offset="100%" stop-color="#1FBBAA" stop-opacity="0.5" />
-        </linearGradient>
-      </defs>
-      <rect x="0" y="471" width="1200" height="157" fill="url(#gradient)" />
-    </svg>
+      <div class="flex items-center">
+        <img
+          src="/avatar.png"
+          alt="Jakub Dajczak"
+          class="rounded-full"
+          :style="{
+            width: '80px',
+            height: '80px',
+            marginRight: '24px',
+            border: '4px solid #262626',
+          }"
+        />
+        <div class="flex flex-col">
+          <div
+            class="flex font-bold"
+            :style="{ fontSize: '30px', color: '#f5f5f5' }"
+          >
+            Jakub Dajczak
+          </div>
+          <div class="flex" :style="{ fontSize: '24px', color: '#a3a3a3' }">
+            qaziok.github.io
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <div
+          class="flex font-bold"
+          :style="{
+            fontSize: '22px',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#a3a3a3',
+            marginBottom: '20px',
+          }"
+        >
+          {{ label }}
+        </div>
+        <div
+          class="flex font-bold"
+          :style="{
+            fontSize: titleSize,
+            lineHeight: 1.1,
+            letterSpacing: '-0.02em',
+            textWrap: 'balance',
+            color: '#ffffff',
+          }"
+        >
+          {{ title }}
+        </div>
+        <div
+          v-if="subTitle"
+          class="flex"
+          :style="{ marginTop: '20px', fontSize: '36px', color: '#a3a3a3' }"
+        >
+          {{ subTitle }}
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex absolute"
+      :style="{
+        left: '0',
+        right: '0',
+        bottom: '0',
+        height: '4px',
+        backgroundImage:
+          'linear-gradient(90deg, rgba(45,212,191,0), rgba(45,212,191,0.7), rgba(45,212,191,0))',
+      }"
+    />
   </div>
 </template>
