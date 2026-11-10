@@ -1,6 +1,6 @@
 ---
 title: "Functional Programming in Python"
-description: "Concepts and Techniques from functional paradigm in Python"
+description: "Concepts and techniques from the functional paradigm in Python: immutable types, comprehensions, closures, pattern matching, decorators and the returns library."
 published: 2025/01/30
 slug: "functional-python"
 ---

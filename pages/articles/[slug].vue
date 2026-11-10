@@ -22,6 +22,9 @@ const { data: doc } = await useAsyncData(`article-${slug}`, () =>
   queryCollection("articles").path(`/articles/${slug}`).first()
 );
 
+const published = doc.value?.published.replaceAll("/", "-");
+const modified = doc.value?.updated?.replaceAll("/", "-") ?? published;
+
 useSeoMeta({
   title: doc.value?.title,
   description: doc.value?.description,
@@ -30,13 +33,16 @@ useSeoMeta({
   ogType: "article",
   twitterCard: "summary_large_image",
   articleAuthor: "Jakub Dajczak",
+  articlePublishedTime: published,
+  articleModifiedTime: modified,
 });
 
 useSchemaOrg([
   defineArticle({
     headline: doc.value?.title,
     description: doc.value?.description,
-    datePublished: doc.value?.published.replaceAll("/", "-"),
+    datePublished: published,
+    dateModified: modified,
   }),
 ]);
 
