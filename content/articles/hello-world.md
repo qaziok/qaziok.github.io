@@ -1,6 +1,6 @@
 ---
 title: "Hello World - My first article here"
-description: "A brief introduction to myself and this blog: why I decided to build a personal website, why I chose Nuxt and how it's hosted on GitHub Pages."
+description: "A brief introduction to myself and this website: what inspired me to build it, why I picked Nuxt and the template it started from."
 published: 2024/08/12
 slug: "hello-world"
 ---

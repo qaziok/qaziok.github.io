@@ -53,9 +53,9 @@
 </template>
 
 <script setup>
-const title = "Jakub Dajczak - Fullstack Developer and Personal Blog";
+const title = "Jakub Dajczak - Fullstack Developer";
 const description =
-  "Jakub Dajczak, a fullstack developer from Gdańsk, Poland. Writing about programming, AI tools, and the side projects I tinker with in my free time.";
+  "I'm Jakub, a fullstack developer from Gdańsk, Poland. I write about programming, AI and the projects I tinker with in my free time.";
 
 defineOgImage("Page", {
   title: "Jakub Dajczak",
