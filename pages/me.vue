@@ -77,7 +77,8 @@ const description =
 
 defineOgImage("Page", {
   title: "Jakub Dajczak",
-  subTitle: "Personal blog about programming and technology",
+  subTitle: "Fullstack developer",
+  label: "Profile",
 });
 
 useSeoMeta({

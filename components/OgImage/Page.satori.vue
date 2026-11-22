@@ -8,11 +8,12 @@ const props = withDefaults(
   {
     title: "title",
     subTitle: "",
-    label: "Personal blog",
+    label: "",
   }
 );
 
-const titleSize = props.title.length > 24 ? "76px" : "96px";
+const titleSize =
+  props.title.length <= 24 ? "96px" : props.title.length <= 48 ? "76px" : "60px";
 </script>
 
 <template>
@@ -36,6 +37,7 @@ const titleSize = props.title.length > 24 ? "76px" : "96px";
 
     <div class="flex flex-col">
       <div
+        v-if="label"
         class="flex font-bold uppercase text-[22px] tracking-widest text-neutral-400 mb-5"
       >
         {{ label }}

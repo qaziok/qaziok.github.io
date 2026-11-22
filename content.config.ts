@@ -7,16 +7,14 @@ export default defineContentConfig({
       type: "page",
       source: "articles/*.md",
       schema: z.object({
-        published: z.string(),
-        updated: z.string().optional(),
+        subtitle: z.string().optional(),
+        published: z.string().date(),
+        updated: z.string().date().optional(),
         slug: z.string(),
         sitemap: defineSitemapSchema({
           name: "articles",
           onUrl(url, entry) {
-            url.lastmod = (entry.updated ?? entry.published).replaceAll(
-              "/",
-              "-"
-            );
+            url.lastmod = entry.updated ?? entry.published;
           },
         }),
       }),

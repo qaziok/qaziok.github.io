@@ -3,7 +3,7 @@
     <article>
       <time
         class="relative z-10 order-first mb-3 flex items-center text-sm text-gray-400 dark:text-gray-500 pl-3.5"
-        :datetime="toIsoDate(article.published)"
+        :datetime="article.published"
         ><span
           class="absolute inset-y-0 left-0 flex items-center"
           aria-hidden="true"
@@ -16,7 +16,7 @@
       <h2
         class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600"
       >
-        {{ article.title }}
+        {{ articleTitle(article) }}
       </h2>
       <p class="relative z-10 mt-2 text-sm text-gray-600 dark:text-gray-400">
         {{ article.description }}
