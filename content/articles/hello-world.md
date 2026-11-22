@@ -1,7 +1,8 @@
 ---
-title: "Hello World - My first article here"
-description: "A brief introduction to myself"
-published: 2024/08/12
+title: "Hello World"
+subtitle: "My first article here"
+description: "A brief introduction to myself and this website: what inspired me to build it, why I picked Nuxt and the template it started from."
+published: 2024-08-12
 slug: "hello-world"
 ---
 

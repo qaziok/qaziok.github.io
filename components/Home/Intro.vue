@@ -53,14 +53,13 @@
 </template>
 
 <script setup>
-const title = "Jakub Dajczak";
+const title = "Jakub Dajczak - Fullstack Developer";
 const description =
-  "I'm Jakub, a fullstack developer from Gdańsk, Poland. I write about programming, AI tools and projects I tinker with.";
+  "I'm Jakub, a fullstack developer from Gdańsk, Poland. I write about programming, AI and the projects I tinker with in my free time.";
 
 defineOgImage("Page", {
-  title,
+  title: "Jakub Dajczak",
   subTitle: "Personal blog about programming and technology",
-  author: "",
 });
 
 useSeoMeta({

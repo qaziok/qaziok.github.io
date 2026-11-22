@@ -90,5 +90,12 @@ export default defineNuxtConfig({
     }),
   },
 
+  ogImage: {
+    defaults: {
+      width: 1200,
+      height: 630,
+    },
+  },
+
   compatibilityDate: "2025-01-30",
 });

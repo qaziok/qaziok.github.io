@@ -24,7 +24,7 @@ const { data: articles } = await useAsyncData("articles-home", () =>
   queryCollection("articles")
     .order("published", "DESC")
     .limit(3)
-    .select("title", "description", "published", "slug", "path")
+    .select("title", "subtitle", "description", "published", "slug", "path")
     .all()
 );
 </script>

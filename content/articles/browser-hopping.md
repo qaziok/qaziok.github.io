@@ -1,7 +1,8 @@
 ---
-title: "Browser hopping - My journey through the web browsers"
-description: "Choosing the right browser is a never-ending quest"
-published: 2024/08/26
+title: "Browser hopping"
+subtitle: "My journey through the web browsers"
+description: "Choosing the right browser is a never-ending quest. Why I keep switching browsers in search of vertical tabs and workspaces, and where I've landed for now."
+published: 2024-08-26
 slug: "browser-hopping"
 ---
 

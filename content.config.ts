@@ -1,4 +1,5 @@
 import { defineCollection, defineContentConfig, z } from "@nuxt/content";
+import { defineSitemapSchema } from "@nuxtjs/sitemap/content";
 
 export default defineContentConfig({
   collections: {
@@ -6,8 +7,16 @@ export default defineContentConfig({
       type: "page",
       source: "articles/*.md",
       schema: z.object({
-        published: z.string(),
+        subtitle: z.string().optional(),
+        published: z.string().date(),
+        updated: z.string().date().optional(),
         slug: z.string(),
+        sitemap: defineSitemapSchema({
+          name: "articles",
+          onUrl(url, entry) {
+            url.lastmod = entry.updated ?? entry.published;
+          },
+        }),
       }),
     }),
     projects: defineCollection({
