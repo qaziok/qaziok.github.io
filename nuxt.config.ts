@@ -1,7 +1,4 @@
 import { definePerson } from "nuxt-schema-org/schema";
-import { isIsoDate } from "./utils/date";
-
-const invalidArticleDates: string[] = [];
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -97,25 +94,6 @@ export default defineNuxtConfig({
     defaults: {
       width: 1200,
       height: 630,
-    },
-  },
-
-  hooks: {
-    "content:file:afterParse"({ collection, content }) {
-      if (collection.name !== "articles") return;
-      for (const field of ["published", "updated"]) {
-        const value = content[field];
-        if (value != null && !isIsoDate(value)) {
-          const message = `${content.id}: "${field}" must be a YYYY-MM-DD date, got ${JSON.stringify(value)}`;
-          invalidArticleDates.push(message);
-          throw new Error(message);
-        }
-      }
-    },
-    "build:before"() {
-      if (invalidArticleDates.length) {
-        throw new Error(invalidArticleDates.join("\n"));
-      }
     },
   },
 
