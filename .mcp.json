@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nuxt-devtools": {
+      "type": "http",
+      "url": "http://localhost:2137/__devtools/__mcp",
+      "headers": {
+        "Origin": "http://localhost:2137"
+      }
+    }
+  }
+}
