@@ -22,7 +22,7 @@
     "nuxt-og-image": "^7.0.7",
     "nuxt-schema-org": "^7.0.1",
     "prettier": "^3.9.10",
-    "satori": "^0.47.1",
+    "satori": "^0.63.2",
     "serve": "^14.2.8",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.4"
