@@ -12,7 +12,7 @@
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.156",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/solar": "^1.2.13",
+    "@iconify-json/solar": "^1.2.16",
     "@nuxt/content": "^3.17.0",
     "@nuxtjs/robots": "^7.0.2",
     "@nuxtjs/sitemap": "^9.1.0",
